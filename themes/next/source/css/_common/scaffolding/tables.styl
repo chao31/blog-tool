@@ -1,0 +1,43 @@
+table {
+  margin: 20px 0;
+  width: $table-width;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $table-border-color;
+  font-size: $table-font-size;
+  table-layout: fixed;
+  word-wrap: break-all;
+}
+table>tbody>tr {
+  &:nth-of-type(odd) { background-color: $table-row-odd-bg-color; }
+  &:hover { background-color: $table-row-hover-bg-color; }
+}
+
+caption, th, td {
+  padding: $table-cell-padding;
+  text-align: $table-content-alignment;
+  vertical-align: $table-content-vertical;
+  font-weight: normal;
+}
+
+th, td {
+  border-bottom: 3px solid $table-cell-border-bottom-color;
+  border-right: 1px solid $table-cell-border-right-color;
+}
+
+th {
+  padding-bottom: 10px;
+  font-weight: $table-th-font-weight;
+}
+
+td { border-bottom-width: 1px; }
+
+/*自定义的表格样式，修改表头颜色、表格边框颜色、字体颜色*/
+table, th, td{
+  border: 1px solid #1e1b26;
+}
+
+th{
+  background: #1e1b26;
+  color: #d18d41;
+}
